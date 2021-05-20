@@ -1,0 +1,20 @@
+{
+  "name": "clean-react-app",
+  "version": "1.0.0",
+  "description": "React Project using TDD, Clean Architecture and SOLID principles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wMeloFernandes/clean-react-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wMeloFernandes/clean-react-app/issues"
+  },
+  "homepage": "https://github.com/wMeloFernandes/clean-react-app#readme"
+}
