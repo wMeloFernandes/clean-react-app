@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/wMeloFernandes/clean-react-app/issues"
   },
-  "homepage": "https://github.com/wMeloFernandes/clean-react-app#readme"
+  "homepage": "https://github.com/wMeloFernandes/clean-react-app#readme",
+  "devDependencies": {
+    "git-commit-msg-linter": "^3.1.0",
+    "i": "^0.3.6",
+    "npm": "^7.14.0"
+  }
 }
