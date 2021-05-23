@@ -41,7 +41,7 @@ button {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  
+
   .form {
     display: flex;
     flex-direction: column;
@@ -58,23 +58,7 @@ button {
       font-size: 20px;
       text-transform: uppercase;
     }
-
-    .inputWrap {
-      margin-top: 16px;
-      display: flex;
-      position: relative;
-      align-items: center;
-
-      input {
-        flex-grow: 1;
-      }
-      .status {
-        position: absolute;
-        right: 8px;
-        font-size: 12px;
-        cursor: help;
-      }
-    }
+    
     .submit {
       margin-top: 32px;
       cursor: pointer;
