@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/wMeloFernandes/clean-react-app#readme",
   "devDependencies": {
+    "@testing-library/react": "^11.2.7",
     "@types/axios": "^0.14.0",
     "@types/faker": "^5.5.5",
     "@types/jest": "^26.0.23",
