@@ -22,10 +22,18 @@
       font-size: 20px;
       text-transform: uppercase;
     }
-    
+
     .submit {
       margin-top: 32px;
       cursor: pointer;
+
+      &:disabled {
+        background-color: $disabled;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
     }
     .link {
       text-align: center;
