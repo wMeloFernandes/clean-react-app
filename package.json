@@ -10,7 +10,7 @@
         "test:staged": "npm test -- --findRelatedTests",
         "test:ci": "npm test -- --coverage",
         "style:check": "prettier --check \"src/**/*\"",
-        "style:fix": "prettier --write \"src/**/*\""
+        "style:fix": "prettier --write \"src/**/*\" && eslint \"src/**/*\" --fix"
     },
     "repository": {
         "type": "git",

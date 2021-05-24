@@ -6,7 +6,7 @@ export class AuthenticationSpy implements Authentication {
   account = mockAccountModel()
   params: AuthenticationParams
   callsCount = 0
-  async auth (params: AuthenticationParams): Promise<AccountModel> {
+  async auth(params: AuthenticationParams): Promise<AccountModel> {
     this.params = params
     this.callsCount++
     return Promise.resolve(this.account)
