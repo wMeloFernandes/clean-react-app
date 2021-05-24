@@ -13,7 +13,7 @@ class ValidationSpy implements Validation {
   errorMessage: string
   input: object
 
-  validate(input: object): string {
+  validate (input: object): string {
     this.input = input
     return this.errorMessage
   }
@@ -45,7 +45,7 @@ describe('Login Component', () => {
     expect(passwordStatus.textContent).toBe('🔴')
   })
 
-  test('Should call Validation with correct values', () => {
+  test('Should call Validation with correct email value', () => {
     const { sut, validationSpy } = makeSut()
 
     const email = faker.internet.email()
@@ -53,6 +53,17 @@ describe('Login Component', () => {
     fireEvent.input(emailInput, { target: { value: email } })
     expect(validationSpy.input).toEqual({
       email: email
+    })
+  })
+
+  test('Should call Validation with correct password value', () => {
+    const { sut, validationSpy } = makeSut()
+
+    const password = faker.internet.password()
+    const passwordInput = sut.getByTestId('password')
+    fireEvent.input(passwordInput, { target: { value: password } })
+    expect(validationSpy.input).toEqual({
+      password: password
     })
   })
 })
