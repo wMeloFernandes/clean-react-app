@@ -20,5 +20,13 @@ describe('Login Component', () => {
 
     const submitButton = sut.getByTestId('submit') as HTMLButtonElement
     expect(submitButton.disabled).toBe(true)
+
+    const emailStatus = sut.getByTestId('email-status')
+    expect(emailStatus.title).toBe('Campo obrigatorio')
+    expect(emailStatus.textContent).toBe('🔴')
+
+    const passwordStatus = sut.getByTestId('password-status')
+    expect(passwordStatus.title).toBe('Campo obrigatorio')
+    expect(passwordStatus.textContent).toBe('🔴')
   })
 })
