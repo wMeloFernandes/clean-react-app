@@ -9,6 +9,7 @@
         "test:watch": "npm test -- --watch",
         "test:staged": "npm test -- --findRelatedTests",
         "test:ci": "npm test -- --coverage",
+        "test:coveralls": "npm run test:ci && coveralls < coverage/lcov.info",
         "style:check": "prettier --check \"src/**/*\"",
         "style:fix": "prettier --write \"src/**/*\" && eslint \"src/**/*\" --fix"
     },
@@ -34,6 +35,7 @@
         "@types/react-router-dom": "^5.1.7",
         "@typescript-eslint/eslint-plugin": "^4.24.0",
         "clean-webpack-plugin": "^4.0.0-alpha.0",
+        "coveralls": "^3.1.0",
         "css-loader": "^5.2.5",
         "eslint": "^7.26.0",
         "eslint-config-standard-with-typescript": "^11.0.1",
