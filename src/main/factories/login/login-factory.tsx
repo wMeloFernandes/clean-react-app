@@ -4,7 +4,7 @@ import { makeRemoteAuthentication } from '@/main/factories/authentication/remote
 import { makeLoginValidation } from './login-validation-factory'
 
 export const makeLogin: React.FC = () => {
-  const url = 'http://fordevs.herokuapp.com/api/login'
+  const url = 'process.env.API_URL/login'
   return (
     <Login
       authentication={makeRemoteAuthentication(url)}
