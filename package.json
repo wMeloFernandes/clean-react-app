@@ -1,6 +1,6 @@
 {
     "name": "clean-react-app",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "React Project using TDD, Clean Architecture and SOLID principles",
     "main": "index.js",
     "scripts": {
